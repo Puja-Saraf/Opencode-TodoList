@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFEBA1;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: #6F69AC;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+h1, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task, .add{
+    padding: 10px;
+    border: none;
+    background: #fff;
+    font-size: 30px;
+    color: #6D8299;
+}
+
+#clear-list{
+        padding: 10px;
+        border: none;
+        background: #fff;
+        font-size: 30px;
+        color: #6D8299;
+}
+
+.add{
+    background: #fff;
+    color: #FD6F96;
+    cursor: pointer;
+}
+.add:hover{
+    background: #FD6F96;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.items{
+    margin: 12px;
+    background: #fff;
+    color: #6D8299;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items li{
+    flex:1;
+}
+
+.done, .deleted{
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.done{
+    background: #57CC99;
+}
+.deleted{
+    background: #FD6F96;
+}
+
+i{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+#clear-list{
+    margin-left: 15px;
+    font-size: 23px;
+    color: #6F69AC;
+}
+#clear-list:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #6F69AC;
+    color: #fff;
+}
