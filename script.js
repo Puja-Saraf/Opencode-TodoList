@@ -8,27 +8,33 @@ list.addEventListener('click',deleteItem);
 function todoList(e){
     e.preventDefault();
 
-    const listDiv=document.createElement("div");
-    listDiv.className="items";
+    if(task.value.length==""){
+        alert("Please Enter Something!");
+    }
 
-    const newItem=document.createElement("li");
-    newItem.innerText=task.value;
-    newItem.className="new-item";
-    listDiv.appendChild(newItem);
+    else{
 
-    const done=document.createElement("button");
-    done.className="done";
-    done.innerHTML='<i class="fas fa-check-circle"></i>';
-    listDiv.appendChild(done);
+        const listDiv=document.createElement("div");
+        listDiv.className="items";
 
-    const deleted=document.createElement("button");
-    deleted.className="deleted";
-    deleted.innerHTML='<i class="fas fa-minus-circle"></i>';
-    listDiv.appendChild(deleted);
+        const newItem=document.createElement("li");
+        newItem.innerText=task.value;
+        newItem.className="new-item";
+        listDiv.appendChild(newItem);
 
-    list.appendChild(listDiv);
+        const done=document.createElement("button");
+        done.className="done";
+        done.innerHTML='<i class="fas fa-check-circle"></i>';
+        listDiv.appendChild(done);
 
-    task.value=""
+        const deleted=document.createElement("button");
+        deleted.className="deleted";
+        deleted.innerHTML='<i class="fas fa-minus-circle"></i>';
+        listDiv.appendChild(deleted);
+
+        list.appendChild(listDiv);
+        task.value=""
+    }
 }
 
 function deleteItem(e){
