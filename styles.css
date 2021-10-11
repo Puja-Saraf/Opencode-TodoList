@@ -67,6 +67,7 @@ h1, form{
 
 .items li{
     flex:1;
+    padding-left: 10px;
 }
 
 .done, .deleted{
